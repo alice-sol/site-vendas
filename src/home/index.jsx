@@ -51,7 +51,7 @@ const Home = () => {
       setProductList(searchResponse);
       setError(false);
     } catch (err) {
-      console.err("Erro ao buscar produto", err);
+      console.error("Erro ao buscar produto", err);
       setError(true);
     } finally {
       setLoading(false);
